@@ -38,10 +38,10 @@ Instructions: {props.get('instruction', 'No specific instructions provided')}
 
 @mcp.tool()
 async def get_alerts(state: str) -> str:
-    """Get weather alerts for a US state.
+    """获取美国各州的天气预警。
 
-    Args:
-        state: Two-letter US state code (e.g. CA, NY)
+    参数:
+        state: 美国州的两字母代码（例如 CA、NY）
     """
     url = f"{NWS_API_BASE}/alerts/active/area/{state}"
     data = await make_nws_request(url)
@@ -57,11 +57,11 @@ async def get_alerts(state: str) -> str:
 
 @mcp.tool()
 async def get_forecast(latitude: float, longitude: float) -> str:
-    """Get weather forecast for a location.
+    """获取指定位置的天气预报。
 
-    Args:
-        latitude: Latitude of the location
-        longitude: Longitude of the location
+    参数:
+        latitude: 位置的纬度
+        longitude: 位置的经度
     """
     # First get the forecast grid endpoint
     points_url = f"{NWS_API_BASE}/points/{latitude},{longitude}"
