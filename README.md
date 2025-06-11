@@ -51,3 +51,9 @@ uv sync
 2. uv的使用参考
 * [Python包管理不再头疼：uv工具快速上手](https://www.cnblogs.com/wang_yb/p/18635441)
 * [uv getting-started](https://docs.astral.sh/uv/getting-started/)
+
+3. mcp inspector的使用参考
+* [https://github.com/modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)
+* [inspector#getting-started](https://modelcontextprotocol.io/docs/tools/inspector#getting-started)
+* [使用Inspector调试MCP服务
+](https://www.cnblogs.com/ghj1976/p/18790993/shi-yonginspector-diao-shimcp-fu-wu)
